@@ -2,7 +2,7 @@ default_run_options[:pty] = true
 default_run_options[:shell] = "bash"
 
 
-set :deploy_to, "/srv/www/www.neurobots.net"
+set :deploy_to, "/srv/www/dev.neurobots.net"
 set :current_path, "#{deploy_to}/public_html"
 set :shared_path, "#{deploy_to}/shared"
 
