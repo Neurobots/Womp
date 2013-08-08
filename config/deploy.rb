@@ -10,9 +10,9 @@ set :shared_path, "#{deploy_to}/shared"
 set :scm, "git"
 set :repository, "git@github.com:Neurobots/Womp.git"
 
-set :user, "chuck"
+set :user, "falken"
 set :use_sudo, false
-set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/id_rsa" }
+set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/falken_deploy_key" }
 
 role :web, "dev.neurobots.net", primary: true
 
