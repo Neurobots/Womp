@@ -2,7 +2,7 @@ default_run_options[:pty] = true
 default_run_options[:shell] = "bash"
 
 
-set :deploy_to, "/srv/www/dev.neurobots.net"
+set :deploy_to, "/srv/www/www.neurobots.net"
 set :current_path, "#{deploy_to}/public_html"
 set :shared_path, "#{deploy_to}/shared"
 
@@ -10,9 +10,9 @@ set :shared_path, "#{deploy_to}/shared"
 set :scm, "git"
 set :repository, "git@github.com:Neurobots/Womp.git"
 
-set :user, "chuck"
+set :user, "falken"
 set :use_sudo, false
-set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/id_rsa" }
+set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/falken_deploy_key" }
 
 role :web, "dev.neurobots.net", primary: true
 
